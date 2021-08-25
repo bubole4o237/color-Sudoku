@@ -1,0 +1,16 @@
+.winDiv {
+    position:absolute;
+    width: 300px;
+    /* height: 100px; */
+    margin-left: 190px;
+    margin-top: -10px;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+
+.winDiv p {
+    /* padding-top: 10px; */
+
+}

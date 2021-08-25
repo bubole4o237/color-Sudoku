@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router-dom';
+
+import Sudoku from './Components/Sudoku/Sudoku';
+import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
+import Footer from './Components/Footer/Footer';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <div className="main">
+
+                <Header />
+
+                <Switch>
+                    <Route path='/' exact component={Home} />
+                    <Route path='/difficulty/level/easy' component={Sudoku} />
+                    <Route path='/difficulty/level/medium' component={Sudoku} />
+                    <Route path='/difficulty/level/hard' component={Sudoku} />
+                </Switch>
+
+                <Footer />
+
+            </div>
+        </div>
+    );
 }
 
 export default App;

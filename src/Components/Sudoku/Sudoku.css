@@ -1,0 +1,135 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.main {
+    width: 700px;
+    margin: 30px auto;
+    padding-bottom: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.titleParagraph {
+    display: inline-block;
+    color: blue;
+}
+
+.winDiv {
+    font-size: 1.5em;
+}
+
+.buttonP {
+    font-weight: bold;
+    margin: 0px 10px 20px 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #fff7eb;
+}
+
+.buttonP:hover {
+    background-color: rgb(250, 208, 144);
+}
+
+.backButton {
+    margin-top: 20px;
+    /* margin-bottom: -20px; */
+}
+
+.timerOnOff {
+    width: 140px;
+    margin: 10px auto;
+    padding: 3px 5px;
+    background-color:blue;
+    color: white;
+    /* font-weight: bold; */
+    /* border: 1px solid black; */
+    border-radius: 12px;
+}
+
+.timerOnOff:hover {
+    color: red;
+}
+
+.sudoku {
+    display: inline-block;
+    /* width: 260px; */
+    width: 364px;
+    margin: 10px auto;
+}
+
+.colorPicker {
+    display: inline-block;
+    width: 600px;
+    /* border: 1px solid black; */
+
+}
+
+.line {
+    height: 52px;
+    margin: 0px;
+}
+
+.cube {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.boxContent {
+    font-weight:bolder;
+    font-size: 16px;
+    /* color: white; */
+}
+
+
+span {
+    display: inline-block;
+    font-weight: bold;;
+    margin: 10px 6px;
+    padding: 8px;
+    color: white;
+    /* background-color: red; */
+}
+
+#spanRed {
+    /* padding: 5px; */
+    background-color: red;
+}
+
+#spanBlue {
+    background-color: blue;
+}
+
+#spanGreen {
+    background-color: green;
+}
+
+#spanYellow {
+    color: black;
+    background-color: yellow;
+}
+
+#spanGrey {
+    background-color: grey;
+}
+
+#spanPink {
+    background-color: hotpink;
+}
+
+#spanOrange {
+    background-color: orange;
+}
+
+#spanErase {
+    /* display: inline-block; */
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+}
