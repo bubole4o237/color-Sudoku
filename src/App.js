@@ -20,6 +20,7 @@ function App() {
                     <Route path='/difficulty/level/easy' component={Sudoku} />
                     <Route path='/difficulty/level/medium' component={Sudoku} />
                     <Route path='/difficulty/level/hard' component={Sudoku} />
+                    <Route path='/difficulty/level/pro' component={Sudoku} />
                 </Switch>
 
                 <Footer />

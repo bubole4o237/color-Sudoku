@@ -21,6 +21,10 @@ const Home = () => {
             <Link to='/difficulty/level/hard'>
                 <p className='titleParagraph buttonP'>Hard</p>
             </Link>
+
+            <Link to='/difficulty/level/pro'>
+                <p className='titleParagraph buttonP'>Pro</p>
+            </Link>
         </div>
     );
 }

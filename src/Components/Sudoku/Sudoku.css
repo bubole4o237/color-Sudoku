@@ -41,21 +41,25 @@ body {
     width: 140px;
     margin: 10px auto;
     padding: 3px 5px;
-    background-color:blue;
     color: white;
+    background-color: blue;
     /* font-weight: bold; */
-    /* border: 1px solid black; */
+    border: 1px solid black;
     border-radius: 12px;
 }
 
 .timerOnOff:hover {
-    color: red;
+    color: blue;
+    background-color: blanchedalmond;
+    /* background-color: rgb(250, 208, 144); */
+
 }
 
 .sudoku {
     display: inline-block;
     /* width: 260px; */
-    width: 364px;
+    /* width: 364px; */
+
     margin: 10px auto;
 }
 
@@ -63,7 +67,6 @@ body {
     display: inline-block;
     width: 600px;
     /* border: 1px solid black; */
-
 }
 
 .line {
@@ -82,15 +85,15 @@ body {
 }
 
 .boxContent {
-    font-weight:bolder;
+    font-weight: bolder;
     font-size: 16px;
     /* color: white; */
 }
 
-
 span {
     display: inline-block;
-    font-weight: bold;;
+    font-weight: bold;
+    ;
     margin: 10px 6px;
     padding: 8px;
     color: white;
@@ -125,6 +128,14 @@ span {
 
 #spanOrange {
     background-color: orange;
+}
+
+#spanPurple {
+    background-color: purple;
+}
+
+#spanBrown {
+    background-color: brown;
 }
 
 #spanErase {

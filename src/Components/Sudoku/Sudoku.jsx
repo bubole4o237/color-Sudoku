@@ -8,6 +8,8 @@ import Medium from './Medium/Medium';
 import MediumColor from './Medium/MediumColor';
 import Hard from './Hard/Hard';
 import HardColor from './Hard/HardColor';
+import Pro from './Pro/Pro';
+import ProColor from './Pro/ProColor';
 import './Sudoku.css';
 
 const Sudoku = (props) => {
@@ -19,6 +21,8 @@ const Sudoku = (props) => {
         sudokuPath = 'medium';
     } else if (props.history.location.pathname.includes('hard')) {
         sudokuPath = 'hard';
+    } else if (props.history.location.pathname.includes('pro')) {
+        sudokuPath = 'pro';
     }
 
     const [dye, setDye] = useState('');
@@ -162,7 +166,9 @@ const Sudoku = (props) => {
             4: 'green',
             5: 'grey',
             6: 'hotpink',
-            7: 'orange'
+            7: 'orange',
+            8: 'purple',
+            9: 'brown'
         };
 
         let colorArrayValue = [];
@@ -180,7 +186,7 @@ const Sudoku = (props) => {
 
         } while (colorArrayValue.length < (multiplier === 3 ? 2 : multiplier));
 
-        
+
         /////// Clear all boxes
         for (let b = 0; b < allBoxes.length; b++) {
             allBoxes[b].style.backgroundColor = '';
@@ -225,7 +231,8 @@ const Sudoku = (props) => {
                 {(sudokuPath === 'easy')
                     ? <Easy /> : (sudokuPath === 'medium')
                         ? <Medium /> : (sudokuPath === 'hard')
-                            ? <Hard /> : null}
+                            ? <Hard /> : (sudokuPath === 'pro')
+                                ? <Pro /> : null}
 
             </div>
 
@@ -235,7 +242,8 @@ const Sudoku = (props) => {
                     {(sudokuPath === 'easy')
                         ? <EasyColor /> : (sudokuPath === 'medium')
                             ? <MediumColor /> : (sudokuPath === 'hard')
-                                ? <HardColor /> : null}
+                                ? <HardColor /> : (sudokuPath === 'pro')
+                                    ? <ProColor /> : null}
 
                 </div>
             </div>
